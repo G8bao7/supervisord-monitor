@@ -7,8 +7,8 @@
 	<link type="text/css" rel="stylesheet" href="<?php echo site_url('/css/bootstrap.min.css');?>"/>
 	<link type="text/css" rel="stylesheet" href="<?php echo site_url('/css/bootstrap-responsive.min.css');?>"/>
 	<link type="text/css" rel="stylesheet" href="<?php echo site_url('/css/custom.css');?>"/>
-<script type="text/javascript" src="<?php echo site_url('/js/jquery-1.10.1.min.js');?>"></script>
-<script type="text/javascript" src="<?php echo site_url('/js/bootstrap.min.js');?>"></script>
+	<script type="text/javascript" src="<?php echo site_url('/js/jquery-1.10.1.min.js');?>"></script>
+	<script type="text/javascript" src="<?php echo site_url('/js/bootstrap.min.js');?>"></script>
 	<noscript>
 	<?php
 	if($this->config->item('refresh')){ ?>
@@ -121,7 +121,7 @@
 									$alert = true;
 									echo '<span class="pull-right"><a href="'.site_url('/control/clear/'.$name.'/'.$item_name).'" id="'.$name.'_'.$item_name.
 											'" onclick="return false" data-toggle="popover" data-message="'.htmlspecialchars($check).'" data-original-title="'.
-											$item_name.'@'.$name.'" class="pop btn btn-mini btn-danger"><img src="/img/alert_icon.png" /></a></span>';
+											$item_name.'@'.$name.'" class="pop btn btn-mini btn-danger"><img src="'.site_url('/img/alert_icon.png').'" /></a></span>';
 								}
 								?>
 							</td>
